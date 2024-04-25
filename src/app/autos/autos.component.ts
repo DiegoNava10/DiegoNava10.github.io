@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Auto } from '../auto';
+import { AutoService } from '../servicio/auto.service';
 
 @Component({
   selector: 'app-autos',
@@ -8,5 +10,11 @@ import { Component } from '@angular/core';
   styleUrl: './autos.component.css'
 })
 export class AutosComponent {
-
+  misAutos:Auto[]=[];
+  constructor(public autoservicio:AutoService){
+    console.log("AutosComponent constructor");
+  }
+  ngOnInit(): void{
+    this.misAutos=this.autoservicio.getAutos();
+  }
 }
