@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CalendarModule } from 'primeng/calendar';
 @Component({
   selector: 'app-renta',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,CalendarModule],
   templateUrl: './renta.component.html',
   styleUrl: './renta.component.css'
 })
