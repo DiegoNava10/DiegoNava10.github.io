@@ -1,0 +1,16 @@
+<h1 class="animate__animated animate__bounce">{{coche.nombre}} <small>{{coche.precio}}</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+    <div class="col md-4 text-center">
+        <img src="{{coche.img}}" width="300px" class="img-fluid" alt="">
+        <br><br>
+        <a [routerLink]="[]" class="btn btn-outline-danger btn-block" routerLinkActive="router-link-active" >Regresar</a>
+    </div>
+    <div class="col md-8">
+        <h3>{{coche.nombre}}</h3>
+        <hr>
+        <p>{{coche.modelo}}</p>
+        
+    </div>
+</div>

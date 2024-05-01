@@ -1,1 +1,8 @@
-<p>buscar works!</p>
+@if (indice == -1) {
+    <div>
+        No existen resultados de {{nombrecoche}}
+    </div>
+}
+@else {
+    <app-encontrar-coche [coche]="buscarcoche"></app-encontrar-coche>
+}
