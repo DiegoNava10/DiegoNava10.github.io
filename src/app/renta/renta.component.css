@@ -1,0 +1,8 @@
+.bg-form{
+    background-image: url(../../assets/img/bg-formulario.jpg);
+    background-size: cover;
+}
+.opacidad{
+    background-color: black;
+    opacity: 0.7;
+}
