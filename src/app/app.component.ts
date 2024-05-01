@@ -4,6 +4,8 @@ import { MenuPrincComponent } from './menu-princ/menu-princ.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -13,4 +15,5 @@ import { FooterComponent } from './footer/footer.component';
 })
 export class AppComponent {
   title = 'MINIPROYECTOII';
+  faInstagram = faInstagram;
 }

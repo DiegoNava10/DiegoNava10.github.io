@@ -1,0 +1,95 @@
+.banner{
+    background-image: url(../../assets/img/bannernosotros.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    height: 350px;
+    width: 1300px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.jumbotron{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+.videoProt{
+    text-align: center;
+}
+
+.text-body-primary i {
+    margin-right: 25px; 
+}
+
+.borde{
+    border-right: 2px solid rgb(210, 210, 210);
+    padding-right: 20px;
+}
+
+.info{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.coche1{
+    background-image: url(../../assets/img/fordFocus.jpg);
+    padding-left: 50px;
+    padding-right: 30px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: right;
+}
+
+.coche2{
+    background-image: url(../../assets/img/hondaCivic.jpg);
+    padding-left: 50px;
+    padding-right: 30px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+
+}
+
+.coche3{
+    background-image: url(../../assets/img/mazda3.jpg);
+    padding-left: 50px;
+    padding-right: 30px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+
+}
+.coche4{
+    background-image: url(../../assets/img/volkswagenGolf.jpg);
+    padding-left: 30px;
+    padding-right: 30px;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+
+}
