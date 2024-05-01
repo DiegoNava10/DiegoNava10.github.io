@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-nav">
     <div class="logo">
         <img src="../../assets/img/icon.png" alt="Logo" height="50">
     </div>
@@ -8,15 +8,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <div class="nav-links ml-auto">
-            <a class="nav-link" href="#" [routerLink]="['/menu-princ']">Inicio</a>
-            <a class="nav-link" href="#" [routerLink]="['/autos']">Reservaciones</a>
-            <a class="nav-link" href="#" [routerLink]="['/nosotros']">Nosotros</a>
-            <a class="nav-link" href="#" [routerLink]="['/renta']">Renta un auto</a>
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link text-uppercase fw-bold" href="#" [routerLink]="['/menu-princ']">Inicio</a>
+            <a class="nav-link text-uppercase fw-bold" href="#" [routerLink]="['/autos']">Reservaciones</a>
+            <a class="nav-link text-uppercase fw-bold" href="#" [routerLink]="['/nosotros']">Nosotros</a>
+            <a class="nav-link text-uppercase fw-bold" href="#" [routerLink]="['/renta']">Renta un auto</a>
+            <a class="nav-link text-uppercase fw-bold" href="#">Contacto</a>
         </div>
     </div>
     <div class="search-bar">
         <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Buscar" #buscarTexto (keyup.enter)="BuscarCoche(buscarTexto.value)">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="BuscarCoche">Buscar</button>
+        <button class="btn btn-outline-success my-2 my-sm-0 text-uppercase" type="submit" (click)="BuscarCoche">Buscar</button>
     </div>
 </nav>
