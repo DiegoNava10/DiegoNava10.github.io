@@ -1,0 +1,7 @@
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+.form-reg{
+    margin: 0 auto;
+}
