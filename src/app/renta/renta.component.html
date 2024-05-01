@@ -1,29 +1,42 @@
-<div class="container mt-5">
+<header [ngStyle]="encabezado">
+    <h1 class="fw-bold text-uppercase">Formulario para la renta de un auto</h1>
+</header>
+<div class="container mt-5 bg-form">
     <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div class="card">
+      <div class="col-md-6 p-5">
+        <div class="card opacidad text-light p-5">
           <div class="card-header">
-            <h4 class="mb-0">Registro</h4>
+            <h4 class="mb-0 text-center">Registro</h4>
           </div>
           <div class="card-body">
             <form>
-              <div class="form-group">
-                <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+              <div class="form-group p-2">
+                <label class="fw-bold">Nombre(s):</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre(s)">
               </div>
-              <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+              <div class="form-group p-2">
+                <label  class="fw-bold">Apellidos:</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingrese sus apellidos">
               </div>
-              <div class="form-group">
-                <label for="password">Contraseña:</label>
-                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+              <div class="form-group p-2">
+                <label  class="fw-bold" >Numero telefonico:</label>
+                <input type="number" class="form-control" id="num" placeholder="Ingrese su numero telefonico">
               </div>
-              <div class="form-group">
-                <label for="confirm-password">Confirmar Contraseña:</label>
-                <input type="password" class="form-control" id="confirm-password" placeholder="Confirme su contraseña">
+              <div class="form-group p-2">
+                <label  class="fw-bold">Domicilio:</label>
+                <input type="text" class="form-control" id="dom" placeholder="Confirme su contraseña">
               </div>
-              <button type="submit" class="btn btn-primary btn-block">Registrarse</button>
+              <div class="form-group p-2">
+                <label  class="fw-bold">Inicio de renta:</label>
+                <input type="datetime-local" class="form-control" id="dom" placeholder="Confirme su contraseña">
+              </div>
+              <div class="form-group p-2">
+                <label  class="fw-bold">Finalizacion de renta:</label>
+                <input type="datetime-local" class="form-control" id="dom" placeholder="Confirme su contraseña">
+              </div>
+              <div class="p-2 d-flex justify-content-center">
+                <button type="submit" class="btn btn-warning fw-bold">Registrarse</button>
+              </div>
             </form>
           </div>
         </div>

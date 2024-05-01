@@ -1,7 +1,8 @@
-.formulario{
-    display: flex;
-    justify-content: center;
+.bg-form{
+    background-image: url(../../assets/img/bg-formulario.jpg);
+    background-size: cover;
 }
-.form-reg{
-    margin: 0 auto;
+.opacidad{
+    background-color: black;
+    opacity: 0.7;
 }
