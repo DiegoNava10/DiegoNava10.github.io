@@ -1,6 +1,7 @@
 <header [ngStyle]="encabezado">
     <h1 class="fw-bold text-uppercase">Formulario para la renta de un auto</h1>
 </header>
+
 <div id="ads" class="row bg-dark">
   @for(i of misAutos;track i;){
     <div class="col-md-4 p-3">
@@ -30,42 +31,42 @@
             <form>
               <div class="form-group p-2">
                 <label class="fw-bold">Nombre(s):</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre(s)">
+                <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="cita.nombre" placeholder="Ingrese su nombre(s)">
               </div>
               <div class="form-group p-2">
                 <label  class="fw-bold">Apellidos:</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingrese sus apellidos">
+                <input type="email" class="form-control" id="email" name="apellido" [(ngModel)]="cita.apellido" placeholder="Ingrese sus apellidos">
               </div>
               <div class="form-group p-2">
                 <label  class="fw-bold" >Numero telefonico:</label>
-                <input type="number" class="form-control" id="num" placeholder="Ingrese su numero telefonico">
+                <input type="number" class="form-control" id="num" name="telefono" [(ngModel)]="cita.telefono" placeholder="Ingrese su numero telefonico">
               </div>
               <div class="form-group p-2">
                 <label  class="fw-bold">Correo electronico:</label>
-                <input type="email" class="form-control" id="dom" placeholder="Ingrese su domicilio">
+                <input type="email" class="form-control" id="dom" name="correo" [(ngModel)]="cita.correo" placeholder="Ingrese su domicilio">
               </div>
               <div class="form-group p-2">
                 <label  class="fw-bold">Fecha de renta:</label>
-                <input type="datetime-local" class="form-control" id="end" placeholder="Ingrese su fecha de finalizacion">
+                <input type="datetime-local" class="form-control" id="end" name="fecha" [(ngModel)]="cita.fecha" placeholder="Ingrese su fecha de finalizacion">
               </div>
               <div class="form-group p-2">
                 <label class="fw-bold">Nombre del auto:</label>
-                <input type="text" class="form-control" id="nombrecar" placeholder="Ingrese el nombre del auto">
+                <input type="text" class="form-control" id="nombrecar" name="nomAuto" [(ngModel)]="cita.nomAuto" placeholder="Ingrese el nombre del auto">
               </div>
               <div class="form-group p-2">
                 <label class="fw-bold">Marca del auto:</label>
-                <input type="text" class="form-control" id="marca" placeholder="Ingrese la marca del auto">
+                <input type="text" class="form-control" id="marca" name="marca" [(ngModel)]="cita.marca" placeholder="Ingrese la marca del auto">
               </div>
               <div class="form-group p-2">
                 <label class="fw-bold">Modelo:</label>
-                <input type="number" class="form-control" id="modelcar" placeholder="Ingrese el modelo del auto">
+                <input type="text" class="form-control" id="modelcar" name="modelo" [(ngModel)]="cita.modelo" placeholder="Ingrese el modelo del auto">
               </div>
               <div class="form-group p-2">
                 <label  class="fw-bold">Dias totales:</label>
-                <input type="number" class="form-control" id="end">
+                <input type="number" class="form-control" id="end" name="diasRentados" [(ngModel)]="cita.diasRentados">
               </div>
               <div class="p-2 d-flex justify-content-center">
-                <button type="submit" class="btn btn-warning fw-bold">RENTAR AHORA!</button>
+                <button type="button" class="btn btn-warning fw-bold" (click)="this.nuevaCita()">RENTAR AHORA!</button>
               </div>
             </form>
           </div>
