@@ -29,6 +29,7 @@
     "@sweetalert2/ngx-sweetalert2": "^12.3.0",
     "bootstrap": "^5.3.3",
     "fastq": "^1.17.1",
+    "fontawesome": "^5.6.3",
     "jquery": "^3.7.1",
     "primeng": "^17.16.0",
     "run-parallel": "^1.2.0",
