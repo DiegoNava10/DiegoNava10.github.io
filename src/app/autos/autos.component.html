@@ -1,10 +1,10 @@
-<div class="contenedor">
+<div class="contenedor container mt-5">
   <div class="categoria">
       <h1>Autos Premium</h1>
   </div>
   <div id="ads" class="row bg-dark">
     <div class="col-md-4 p-3" *ngFor="let i of misAutos.slice(0, 9)">
-      <div class="card rounded">
+      <div class="card rounded contendor-cards">
         <div>
           <span class="card-notify-badge">{{i.nombre}}</span>
           <span class="card-notify-year">{{i.modelo}}</span>
@@ -20,13 +20,13 @@
   </div>
 </div>
 
-<div class="contenedor">
+<div class="contenedor container mt-5">
   <div class="categoria">
       <h1>Autos Compactos</h1>
   </div>
   <div id="ads" class="row bg-dark">
     <div class="col-md-4 p-3" *ngFor="let i of misAutos.slice(9, 15)">
-      <div class="card rounded">
+      <div class="card rounded contendor-cards">
         <div>
           <span class="card-notify-badge">{{i.nombre}}</span>
           <span class="card-notify-year">{{i.modelo}}</span>

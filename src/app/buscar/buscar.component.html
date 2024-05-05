@@ -1,8 +1,10 @@
 @if (indice == -1) {
-    <div>
+    <div class="container mt-5">
         No existen resultados de {{nombrecoche}}
     </div>
 }
 @else {
-    <app-encontrar-coche [coche]="buscarcoche"></app-encontrar-coche>
+    <div class="container mt-5">
+       <app-encontrar-coche [coche]="buscarcoche" ></app-encontrar-coche> 
+    </div>
 }
