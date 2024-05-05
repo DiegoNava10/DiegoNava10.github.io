@@ -4,13 +4,13 @@ import { AppComponent } from './app.component';
 import { ProtegidoPipe } from './protegido.pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,AppComponent,ProtegidoPipe, BrowserModule, MatSnackBarModule
-  ]
+    CommonModule,AppComponent,ProtegidoPipe, BrowserModule, MatSnackBarModule,ScrollPanelModule]
 })
 export class AppModule { }
