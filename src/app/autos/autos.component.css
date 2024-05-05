@@ -3,9 +3,10 @@
   justify-content:center; 
   flex-wrap:wrap; 
   gap: 16px; 
+  width: 100%;
 } 
 .pie{
-  background: #6699ff;
+  background: #ff4444;
   border-radius:0 0 4px 4px;
   padding: 10px;
   text-align:center;
@@ -60,7 +61,8 @@
   border-radius: 30px 30px 30px 30px;
   color: #000;
   padding: 5px 10px;
-  font-size: 14px;        
+  font-size: 14px;       
+  margin: 0; 
 }
 
 #ads .card:hover {
@@ -75,27 +77,9 @@
   font-size: 20px;
 }
 
-
 #ads .card-image-overlay span {
-  display: inline-block;              
-}
-
-#ads .ad-btn {
-  text-transform: uppercase;
-  width: 150px;
-  height: 40px;
-  border-radius: 80px;
-  font-size: 16px;
-  line-height: 35px;
-  text-align: center;
-  border: 3px solid #e6de08;
-  display: block;
-  text-decoration: none;
-  margin: 20px auto 1px auto;
-  color: #000;
-  overflow: hidden;        
-  position: relative;
-  background-color: #e6de08;
+  display: inline-block;  
+  margin: 10px 0px 10px 0px;
 }
 
 #ads .ad-btn:hover {
@@ -112,36 +96,11 @@
   font-size: 18px;
 }
 
-#ads .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-#ads .col-md-4 {
-  display: flex;
-  padding: 15px;
-}
-
 #ads .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Asegura que el footer siempre esté al fondo */
-  height: 100%; /* Hace que todas las cards tengan la misma altura */
+  justify-content: space-between;
   transition: all 0.3s ease;
   width: 100%;
-}
-
-#ads .card:hover {
-  transform: scale(1.05);
-  box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
-}
-
-#ads .card img {
-  width: 100%;
-  height: auto;
-}
-
-#ads .card .card-image-overlay {
-  margin: auto 0; /* Centra el contenido de precios y consumo */
+  height: 100%;
 }
