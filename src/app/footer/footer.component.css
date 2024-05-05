@@ -1,13 +1,10 @@
-.container{
-    background-color:rgb(165, 204, 255);
-}
 footer {
     background: #16222A;
     background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
     background: linear-gradient(59deg, #3A6073, #16222A);
     color: white;
     margin-top:100px;
-    height: 100vh;
+    height: 400px;
   }
   
   footer a {
