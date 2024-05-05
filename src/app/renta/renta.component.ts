@@ -31,6 +31,7 @@ export class RentaComponent {
     this.misAutos=this.autoservicio.getAutos();
   }
   nuevaCita():void{
+    console.log('Info Nueva cita');
     console.log(this.cita.nombre);
     this.citasService.agregarCita(this.cita);
   }
