@@ -8,15 +8,15 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <div class="nav-links ml-auto">
-            <a class="nav-link text-uppercase fw-bold" href="#" [routerLink]="['/menu-princ']">Inicio</a>
-            <a class="nav-link text-uppercase fw-bold" href="#" [routerLink]="['/autos']">Vehículos</a>
-            <a class="nav-link text-uppercase fw-bold" href="#" [routerLink]="['/nosotros']">Nosotros</a>
-            <a class="nav-link text-uppercase fw-bold" href="#" [routerLink]="['/renta']">Renta un auto</a>
-            <a class="nav-link text-uppercase fw-bold" href="#" [routerLink]="['/citas']">Citas</a>
+            <a class="nav-link text-uppercase fw-bold text-light" href="#" [routerLink]="['/menu-princ']">Inicio</a>
+            <a class="nav-link text-uppercase fw-bold text-light" href="#" [routerLink]="['/autos']">Vehículos</a>
+            <a class="nav-link text-uppercase fw-bold text-light" href="#" [routerLink]="['/nosotros']">Nosotros</a>
+            <a class="nav-link text-uppercase fw-bold text-light" href="#" [routerLink]="['/renta']">Renta un auto</a>
+            <a class="nav-link text-uppercase fw-bold text-light" href="#" [routerLink]="['/citas']">Citas</a>
         </div>
     </div>
     <div class="search-bar">
         <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Buscar" #buscarTexto (keyup.enter)="BuscarCoche(buscarTexto.value)">
-        <button class="btn btn-outline-success my-2 my-sm-0 text-uppercase" type="submit" (click)="BuscarCoche(buscarTexto.value)">Buscar</button>
+        <button class="btn btn-success my-2 my-sm-0 text-uppercase text-light" type="submit" (click)="BuscarCoche(buscarTexto.value)">Buscar</button>
     </div>
 </nav>
