@@ -14,5 +14,6 @@ export const routes: Routes = [
     {path: 'buscar/:nombrecoche', component:BuscarComponent},
     {path: 'coche/:id',component:EncontrarCocheComponent},
     {path: 'renta', component: RentaComponent},
-    {path: 'citas', component: CitasComponent}
+    {path: 'citas', component: CitasComponent},
+    {path: '**', pathMatch: 'full', redirectTo: 'menu-princ'}
 ];

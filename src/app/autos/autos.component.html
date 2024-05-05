@@ -2,16 +2,22 @@
     <div class="categoria">
         <h1>Autos Compactos</h1>
     </div>
+    <div id="ads" class="row bg-dark">
     @for(i of misAutos; track i;){
-        <div class="tarjeta">
-            <h2 class="titulo">{{i.nombre}}</h2>
-            <div class="cuerpo">
-              <img src={{i.img}} alt="muestra">
-              <p>{{i.modelo}}</p>
-              <p>{{i.precio}}</p>
-              <p>{{i.consumoDeCombustible}}</p>
-            </div>
-            <div class="pie"><a href="#">Ver oferta</a></div>
+      <div class="col-md-4 p-3">
+        <div class="card rounded">
+          <div>
+            <span class="card-notify-badge">{{i.nombre}}</span>
+            <span class="card-notify-year">{{i.modelo}}</span>
+            <img src={{i.img}} alt="muestra" class="img-fluid card-image w-100">
           </div>
+          <div class="card-image-overlay m-auto">
+            <span class="card-detail-badge">{{i.precio}}</span>
+            <span class="card-detail-badge">{{i.consumoDeCombustible}}</span>
+          </div>
+          <div class="pie"><a [routerLink]="['/buscar',i.nombre]">Ver oferta</a></div>
+        </div>
+      </div>
     }
   </div>
+</div>
