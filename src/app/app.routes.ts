@@ -6,7 +6,7 @@ import { BuscarComponent } from './buscar/buscar.component';
 import { EncontrarCocheComponent } from './encontrarcoche/encontrar-coche.component';
 import { RentaComponent } from './renta/renta.component';
 import { CitasComponent } from './citas/citas.component';
-
+import { APIComponent } from './api/api.component';
 export const routes: Routes = [
     {path: 'menu-princ', component: MenuPrincComponent},
     {path: 'autos', component: AutosComponent},
@@ -15,6 +15,7 @@ export const routes: Routes = [
     {path: 'coche/:id',component:EncontrarCocheComponent},
     {path: 'renta', component: RentaComponent},
     {path: 'citas', component: CitasComponent},
+    {path: 'api', component: APIComponent},
     {path: '**', pathMatch: 'full', redirectTo: 'menu-princ'},
     {path: 'renta/:nombreAuto/:marcaAuto/:modeloAuto/:precioAuto', component: RentaComponent } 
 ];

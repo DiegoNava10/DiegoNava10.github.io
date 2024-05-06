@@ -1,0 +1,21 @@
+<div class="container">
+    <h1>Lista de Vehiculos</h1>
+    <div class="card-group row row-cols-1 row-cols-md-3 g-4">
+        @for (item of array; track item) {
+            <div class="col">
+                <div class="card h-100">
+                    <img [src]="item.img" alt="" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">{{item.nombre}}</h5>
+                        <h5 class="card-title">{{item.marca}}</h5>
+                        <h5 class="card-title">{{item.modelo}}</h5>
+                        <h5 class="card-title">{{item.tipoDeMotor}}</h5>
+                        <h5 class="card-title">{{item.consumoDeCombustible}}</h5>
+                        <h5 class="card-title">{{item.precio}}</h5>
+                        <h5 class="card-title">{{item.descripcion}}</h5>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
