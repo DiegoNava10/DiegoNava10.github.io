@@ -14,6 +14,7 @@ export class CitasService {
   }
   agregarCita(cita: Cita){
     this.citas.push(cita);
+    console.log(this.citas);
     localStorage.setItem('data',JSON.stringify(this.citas));
   }
   nuevaCita(): Cita{

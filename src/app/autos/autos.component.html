@@ -2,15 +2,15 @@
   <div class="categoria">
       <h1>Autos Premium</h1>
   </div>
-  <div id="ads" class="row bg-dark">
-    <div class="col-md-4 p-3" *ngFor="let i of misAutos.slice(0, 9)">
+  <div id="ads" class="bg-dark masonry-grid">
+    <div class="col p-3 masonry-item" *ngFor="let i of misAutos.slice(0, 10)">
       <div class="card rounded">
         <div>
           <span class="card-notify-badge">{{i.nombre}}</span>
           <span class="card-notify-year">{{i.modelo}}</span>
           <img src={{i.img}} alt="muestra" class="img-fluid card-image w-100 h-100">
         </div>
-        <div class="card-image-overlay m-auto">
+        <div class="card-image-overlay1 m-auto">
           <span class="card-detail-badge">{{i.precio}}</span>
           <span class="card-detail-badge">{{i.consumoDeCombustible}}</span>
         </div>
@@ -22,10 +22,10 @@
 
 <div class="contenedor">
   <div class="categoria">
-      <h1>Autos Compactos</h1>
+      <h1 class="uno">Autos Compactos</h1>
   </div>
   <div id="ads" class="row bg-dark">
-    <div class="col-md-4 p-3" *ngFor="let i of misAutos.slice(9, 15)">
+    <div class="col-md-4 p-3" *ngFor="let i of misAutos.slice(10, 16)">
       <div class="card rounded">
         <div>
           <span class="card-notify-badge">{{i.nombre}}</span>
