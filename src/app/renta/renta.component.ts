@@ -4,7 +4,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { AutosComponent } from '../autos/autos.component';
 import { Auto, Cita } from '../auto';
 import { AutoService } from '../servicio/auto.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import { CitasService } from '../citas.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import Swal from 'sweetalert2';
@@ -47,12 +47,14 @@ export class RentaComponent {
     this.cita.marca = this.marcaAuto;
     this.cita.modelo = this.modeloAuto;
   }
-  nuevaCita(mensaje: string, accion: string):void{
-    
+  nuevaCita(mensaje: string, accion: string, form: NgForm):void{
+    if (form.invalid) {
+      Swal.fire('Error', 'Por favor completa todos los campos', 'error');
+      return;
+    }
     console.log(this.cita.nombre);
     this.citasService.agregarCita(this.cita);
     Swal.fire('¡Felicidades!', 'Tu renta ha sido agendada', 'success');
-
     this._snackBar.open(mensaje, accion, {
       duration: 5000,
       panelClass: ['estilo-snackbar'],
