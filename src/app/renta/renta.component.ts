@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { CitasService } from '../citas.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import Swal from 'sweetalert2';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-renta',
@@ -26,15 +27,25 @@ export class RentaComponent {
     "text-align":"center"
   }
   misAutos:Auto[]=[];
-
   
+  nombreAuto!: string;
+  marcaAuto!: string;
+  modeloAuto!: string;
 
-  constructor(public autoservicio:AutoService, private citasService: CitasService, private _snackBar: MatSnackBar){
+  constructor(public autoservicio:AutoService, private citasService: CitasService, private _snackBar: MatSnackBar, public ruta: ActivatedRoute){
     console.log("AutosComponent constructor");
   }
   ngOnInit(): void{
     this.cita=this.citasService.nuevaCita();
     this.misAutos=this.autoservicio.getAutos();
+    this.ruta.params.subscribe(params => {
+      this.nombreAuto = params['nombreAuto'];
+      this.marcaAuto = params['marcaAuto'];
+      this.modeloAuto = params['modeloAuto'];
+    });
+    this.cita.nomAuto = this.nombreAuto;
+    this.cita.marca = this.marcaAuto;
+    this.cita.modelo = this.modeloAuto;
   }
   nuevaCita(mensaje: string, accion: string):void{
     

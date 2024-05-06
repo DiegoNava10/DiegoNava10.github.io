@@ -58,7 +58,7 @@ export const AUTOS: Auto[] = [
         modelo: "2023",
         marca: "Bugatti",
         precio: "$10,000 MXN/día",
-        consumoDeCombustible: "20.2 L/100km",
+        consumoDeCombustible: "20 L/100km",
         tipoDeMotor: "Gasolina"
     },
     {
@@ -90,6 +90,16 @@ export const AUTOS: Auto[] = [
         precio: "$8,500 MXN/día",
         consumoDeCombustible: "18.7 L/100km",
         tipoDeMotor: "Gasolina"
+    },
+    {
+        nombre: "Tesla Model 3",
+        descripcion: "El Tesla Model 3 es un automóvil eléctrico de alta tecnología diseñado y fabricado por Tesla, Inc. Ofrece un rendimiento impresionante con cero emisiones de CO2, destacando por su innovación y sostenibilidad.",
+        img: "assets/img/teslaModel3.jpg",
+        modelo: "2024",
+        marca: "Tesla",
+        precio: "$2,500 MXN/día",
+        consumoDeCombustible: "Electricidad",
+        tipoDeMotor: "Eléctrico"
     },
     {
         nombre: "Toyota Corolla",
