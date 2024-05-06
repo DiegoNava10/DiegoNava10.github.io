@@ -1,20 +1,30 @@
+  .contenedor{
+    display: flex!important;
+    flex-direction: row!important;
+    justify-content: center!important;
+    align-items: center!important;
+  }
   .collage-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-start;
-    background-color: rgb(88, 88, 88);
-    padding:15px;
-    border-radius: 30px;
+    display: flex!important;
+    align-items: center!important;
+    flex-wrap:wrap!important;
+    justify-content: space-around!important;
+    align-items: flex-start!important;
+    background-color: rgb(88, 88, 88)!important;
+    padding:15px!important;
+    border-radius: 30px!important;
+    width: 1600px!important;
+    max-width: 100%!important;
   }
   .image-container {
-    flex: 0 0 5%;
-    margin: 4px;
+    flex: 0 0 5%!important;
+    margin-left: 1px!important;
+    margin-bottom: 4px!important;
   }
   img {
-    width: 300px;
-    height: 230px;
-    border: 2px solid;
-    border-radius: 30px;
-    background-size: cover;
+    width: 300px!important;
+    height: 230px!important;
+    border: 3px solid black!important;
+    border-radius: 30px!important;
+    background-size: cover!important;
   }
