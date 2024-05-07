@@ -1,7 +1,7 @@
 <div class="contenedor">
   <div class="collage-container">
       <div class="image-container" *ngFor="let image of imagenes">
-        <img [src]="image.img" alt="{{ image.nombre}}" class="image">
+        <img [src]="image.img" alt="{{ image.nombre}}" class="image" pTooltip="{{ image.nombre }}" tooltipPosition="top" tooltipPositionStyle="absolute">
       </div>
   </div>
 </div>
