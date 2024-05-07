@@ -12,7 +12,6 @@ export class APIComponent {
   array:Carros[]=[];
   constructor(public carroService:CarrosService){}
   ngOnInit(){
-    console.log("En este moemnto el componente se ha cargado");
     this.recuperarDatos();
   }
   recuperarDatos():void{
@@ -24,7 +23,7 @@ export class APIComponent {
   }
   successRequest(data:any):void{
     console.log("data",data);
-    this.array=data.products;
+    this.array=data.Carros;
     console.log("array",this.array);
   }
 }
