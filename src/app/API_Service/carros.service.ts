@@ -5,7 +5,7 @@ import { take } from 'rxjs';
   providedIn: 'root'
 })
 export class CarrosService {
-  urlAPI:string="https://lotesdautosdj.free.beeceptor.com/"
+  urlAPI:string=""
   constructor(private http:HttpClient) { }
   retornar(){
     return this.http.get(this.urlAPI).pipe(take(1));
